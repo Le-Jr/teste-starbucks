@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
-import { HeaderStyle, LogoStyle, UlStyle } from "./style";
+import "./style.scss";
 
 const Header = () => {
   return (
-    <HeaderStyle>
-      <LogoStyle src="/logo.png" alt="" />
+    <header>
+      <img src="/logo.png" alt="" className="logo" />
       <nav>
-        <UlStyle>
+        <ul>
           <li>
             <Link to="/">Home</Link>
           </li>
@@ -16,9 +16,9 @@ const Header = () => {
           <li>
             <Link to="/sobre">Sobre</Link>
           </li>
-        </UlStyle>
+        </ul>
       </nav>
-    </HeaderStyle>
+    </header>
   );
 };
 export default Header;
